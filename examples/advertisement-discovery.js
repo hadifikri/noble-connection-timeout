@@ -34,6 +34,23 @@ noble.on('discover', function(peripheral) {
     console.log('\t\t' + peripheral.advertisement.txPowerLevel);
   }
 
+  peripheral.connect(function(error){
+     if (error) {
+        console.log("error " + error)
+     }
+     else {
+        setTimeout(function(){
+           noble.cancelLeConn(function(error){
+             if(error){
+               console.log(error);
+             }
+             else {
+                console.log("cancelled le con")
+             }
+          });
+        }, 10 * 1000)
+     }
+  });
+
   console.log();
 });
-
