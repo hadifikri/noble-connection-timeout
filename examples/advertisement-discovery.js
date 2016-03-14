@@ -43,8 +43,10 @@ noble.on('discover', function(peripheral) {
            noble.cancelLeConn(function(error){
              if(error){
                console.log(error);
+               peripheral.removeDiscoverServicesListeners();
              }
              else {
+                peripheral.removeDiscoverServicesListeners();
                 console.log("cancelled le con")
              }
           });

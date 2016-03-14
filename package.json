@@ -1,15 +1,15 @@
 {
-  "author": "Sandeep Mistry <sandeep.mistry@gmail.com>",
+  "author": "David Messem <david.messem@gmail.com>",
   "license": "MIT",
-  "name": "noble",
+  "name": "noble-connection-timeout",
   "description": "A Node.js BLE (Bluetooth Low Energy) central library.",
-  "version": "1.3.0",
+  "version": "1.3.1",
   "repository": {
     "type": "git",
-    "url": "https://github.com/sandeepmistry/noble.git"
+    "url": "https://github.com/davidmessem/noble-connection-timeout.git"
   },
   "bugs": {
-    "url": "https://github.com/sandeepmistry/noble/issues"
+    "url": "https://github.com/davidmessem/noble-connection-timeout/issues"
   },
   "keywords": [
     "bluetooth",
